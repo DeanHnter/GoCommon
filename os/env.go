@@ -1,4 +1,4 @@
-package commonos
+package os
 
 import (
 	"os"
