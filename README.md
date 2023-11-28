@@ -3,12 +3,13 @@ This is my personal project for common reusable functions, data-structures etc I
 
 ## OS
 ### Environment Variables
+Read all environment variables into a reusable map.
 ```go
 	import (
 		gocmnos "github.com/DeanHnter/GoCommon/os"
 	)
 	envs := gocmnos.ReadEnvironmentVariables()
-	if _, exists := envs.Exists("ENV_VARIABLE"); !exists {
+	if val, exists := envs.Exists("ENV_VARIABLE"); !exists {
 		panic("Environment variable ENV_VARIABLE doesent exist")
 	}
 ```
