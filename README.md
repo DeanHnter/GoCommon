@@ -4,6 +4,9 @@ This is my personal project for common reusable functions, data-structures etc I
 ## OS
 ### Environment Variables
 ```go
+	import (
+		gocmnos "github.com/DeanHnter/GoCommon/os"
+	)
 	envs := gocmnos.ReadEnvironmentVariables()
 	if _, exists := envs.Exists("ENV_VARIABLE"); !exists {
 		panic("Environment variable ENV_VARIABLE doesent exist")
