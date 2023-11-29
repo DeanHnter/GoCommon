@@ -13,5 +13,5 @@ func (fl *FileLogger) SetOutput(path string) {
     if err != nil {
         panic(err)
     }
-    fl.out = file
+    fl.Out = file
 }
