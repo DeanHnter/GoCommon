@@ -8,7 +8,7 @@ type FileLogger struct {
 }
 
 func (fl *FileLogger) SetOutput(path string) {
-    fl.filepath = path
+    fl.Filepath = path
     file, err := os.Create(path)
     if err != nil {
         panic(err)
