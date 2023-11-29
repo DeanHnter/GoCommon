@@ -6,8 +6,8 @@ import (
 )
 
 type IOLogger struct {
-    level Level
-    out io.Writer
+    Level Level
+    Out io.Writer
 }
 
 func (bl *IOLogger) Log(level Level, message string) {
