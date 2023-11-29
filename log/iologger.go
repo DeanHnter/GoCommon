@@ -11,15 +11,15 @@ type IOLogger struct {
 }
 
 func (bl *IOLogger) Log(level Level, message string) {
-    if level >= bl.level {
-        fmt.Fprintln(bl.out, message)
+    if level >= bl.Level {
+        fmt.Fprintln(bl.Out, message)
     }
 }
 
 func (bl *IOLogger) SetOutput(out io.Writer) {
-    bl.out = out
+    bl.Out = out
 }
 
 func (bl *IOLogger) SetLevel(level Level) {
-    bl.level = level
+    bl.Level = level
 }
