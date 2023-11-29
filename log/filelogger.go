@@ -4,7 +4,7 @@ import "os"
 
 type FileLogger struct {
     IOLogger
-    filepath string
+    Filepath string
 }
 
 func (fl *FileLogger) SetOutput(path string) {
