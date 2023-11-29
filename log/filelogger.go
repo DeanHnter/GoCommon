@@ -7,7 +7,7 @@ type FileLogger struct {
     Filepath string
 }
 
-func (fl *FileLogger) SetOutput(path string) {
+func (fl FileLogger) SetOutput(path string) {
     fl.Filepath = path
     file, err := os.Create(path)
     if err != nil {
